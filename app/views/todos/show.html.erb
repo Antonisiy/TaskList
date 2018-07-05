@@ -1,19 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Text:</strong>
+  <strong>Название:</strong>
   <%= @todo.text %>
 </p>
 
 <p>
-  <strong>Iscompleted:</strong>
+  <strong>Выполнено?:</strong>
   <%= @todo.isCompleted %>
 </p>
 
 <p>
-  <strong>Project:</strong>
+  <strong>Категория:</strong>
   <%= @todo.project.title %>
 </p>
 
-<%= link_to 'Edit', edit_todo_path(@todo) %> |
-<%= link_to 'Back', root_path %>
+<%= link_to 'Назад', root_path %>

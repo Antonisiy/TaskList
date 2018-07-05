@@ -29,7 +29,7 @@ class TodosController < ApplicationController
 
     respond_to do |format|
       if @todo.save
-        format.html { redirect_to @todo, notice: 'Todo was successfully created.' }
+        format.html { redirect_to @todo, notice: 'Задача успешно добавлена!' }
         format.json { render :show, status: :created, location: @todo }
       else
         format.html { render :new }
