@@ -18,6 +18,7 @@
   src:url('OpenSans-Light.eot');
   src:url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
     url('OpenSans-Light.svg#icomoon') format('svg'),
+    url('OpenSans-Light.woff') format('woff'),
     url('icomOpenSans-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -27,6 +28,7 @@
   src:url('OpenSans-Regular.eot');
   src:url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
     url('OpenSans-Regular.svg#icomoon') format('svg'),
+    url('OpenSans-Regular.woff') format('woff'),
     url('OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -36,6 +38,7 @@
   src:url('OpenSans-Semibold.eot');
   src:url('OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
     url('OpenSans-Semibold.svg#icomoon') format('svg'),
+    url('OpenSans-Semibold.woff') format('woff'),
     url('OpenSans-Semibold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
