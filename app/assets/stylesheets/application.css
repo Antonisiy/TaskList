@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+@font-face {
+  font-family: 'OpenSans-Light';
+  src:url('OpenSans-Light.eot');
+  src:url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('OpenSans-Light.svg#icomoon') format('svg'),
+    url('icomOpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src:url('OpenSans-Regular.eot');
+  src:url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('OpenSans-Regular.svg#icomoon') format('svg'),
+    url('OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src:url('OpenSans-Semibold.eot');
+  src:url('OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('OpenSans-Semibold.svg#icomoon') format('svg'),
+    url('OpenSans-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

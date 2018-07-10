@@ -1,0 +1,71 @@
+<div class="container-fluid header">
+  <div class="row">
+    <div class="col-11 title">
+        <h1>Задачи</h1>
+    </div>
+    <div class="col-1 right">
+        <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#addModal">
+           <i class="fas fa-plus"></i>
+        </button>
+    </div>
+        </div>
+    </div>  
+<main class="py-5">
+
+  <div class="container-fluid">
+    <div class="row cards">
+      <template v-for="(project, tIndex) in Projects">
+    <div class="card_block col-lg-4 col-md-6 col-sm-12">
+        <div class="card" :id="'project' + project.id">
+          <div class="card-header">
+            <h6>{{ project.title }}</h6>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li v-for="(todo, iIndex) in project.todos" class="list-group-item">
+              <div class="custom-control custom-checkbox">
+                <input :id="'p' + tIndex + 'i' + iIndex" type="checkbox" v-model="todo.isCompleted" @change="onCheckChanged($event, project.id, todo)" class="custom-control-input">
+                <label :for="'p' + tIndex + 'i' + iIndex" class="custom-control-label" :class="{ 'isCompleted' : todo.isCompleted }">{{ todo.text }}</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>   
+      </template>
+
+    </div>
+   </div>   
+    
+      <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="addModal">Новая задача</h5>
+            </div>
+            <div class="modal-body">
+              <div class="col-12">
+                <form>
+                  <div class="form-group">
+                    <input type="text" class="custom-control" id="addModal_Title" v-model="addItem_Title" placeholder="Название задачи">
+               
+                    <select class="custom-select" v-model="selectProject" name="Projects">
+                      <option value="" disabled selected>Категория</option>
+                       <template v-for="(project, Index) in Projects">
+                          <option v-bind:value="{ id: project.id }" >{{ project.title }}</option>
+                      </template>
+                    </select>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+              <button type="button" class="btn btn-primary" @click="addItem(selectProject,addItem_Title)">ОК</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+</main>
+

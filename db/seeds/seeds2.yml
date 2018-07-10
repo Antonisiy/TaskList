@@ -1,0 +1,49 @@
+projects:
+ - title: 'Семья'
+   todos:
+
+    - text: 'Купить молоко'
+      isCompleted: true
+
+    - text: 'Заменить масло в двигателе до 23 апреля'
+      isCompleted: false
+
+    - text: 'Отправить письмо бабушке'
+      isCompleted: true
+
+    - text: 'Заплатить за квартиру'
+      isCompleted: false
+
+    - text: 'Забрать обувь из ремонта'
+      isCompleted: false
+
+ - title: 'Работа'
+   todos:
+
+    - text: 'Позвонить заказчику'
+      isCompleted: true
+
+    - text: 'Отправить документы'
+      isCompleted: true
+
+    - text: 'Заполнить отчет'
+      isCompleted: false
+
+- title: 'Учеба'
+   todos:
+
+    - text: 'Изучить Vue.js'
+      isCompleted: true
+
+    - text: 'Прочитать книгу про JS'
+      isCompleted: false
+
+ - title: 'Прочее'
+   todos:
+
+    - text: 'Убраться в комнате'
+      isCompleted: false
+
+    - text: 'Подготовиться к поездке'
+      isCompleted: false
+
