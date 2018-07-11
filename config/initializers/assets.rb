@@ -8,7 +8,7 @@ Rails.application.config.assets.version = '1.0'
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
-Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 Rails.application.config.assets.initialize_on_precompile = false
 Rails.application.config.assets.js_compressor = :uglifier
 Rails.application.config.assets.js_compressor = Uglifier.new(harmony: true)
