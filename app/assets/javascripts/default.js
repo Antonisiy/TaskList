@@ -1,4 +1,4 @@
-//Vue.http.headers.common['X-CSRF-TOKEN'] = window.csrfToken;
+Vue.http.headers.common['X-CSRF-TOKEN'] = window.csrfToken;
 
 var App = new Vue({
   el: '.App',
