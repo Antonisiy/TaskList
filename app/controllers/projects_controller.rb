@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: [:show, :edit, :update, :destroy]
+  protect_from_forgery with: :null_session
 
   # GET /projects
   # GET /projects.json

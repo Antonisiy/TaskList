@@ -1,5 +1,6 @@
 class TodosController < ApplicationController
   before_action :set_todo, only: [:show, :edit, :update, :destroy]
+  protect_from_forgery with: :null_session
 
   # POST projects/1/todos
   # POST projects/1/todos
